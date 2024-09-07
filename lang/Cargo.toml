@@ -1,0 +1,44 @@
+[package]
+name = "huione-anchor-lang"
+version = "0.1.0"
+authors = ["HUIONE Foundation <foundation@huione.com>"]
+repository = "https://github.com/huione/anchor"
+rust-version = "1.68.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "HUIONE Sealevel eDSL"
+
+[features]
+init-if-needed = ["huione-anchor-derive-accounts/init-if-needed"]
+derive = []
+default = []
+anchor-debug = [
+    "huione-anchor-attribute-access-control/anchor-debug",
+    "huione-anchor-attribute-account/anchor-debug",
+    "huione-anchor-attribute-constant/anchor-debug",
+    "huione-anchor-attribute-error/anchor-debug",
+    "huione-anchor-attribute-event/anchor-debug",
+    "huione-anchor-attribute-interface/anchor-debug",
+    "huione-anchor-attribute-program/anchor-debug",
+    "huione-anchor-attribute-program/anchor-debug",
+    "huione-anchor-attribute-state/anchor-debug",
+    "huione-anchor-derive-accounts/anchor-debug"
+]
+
+[dependencies]
+huione-anchor-attribute-access-control = { path = "./attribute/access-control", version = "0.1.0" }
+huione-anchor-attribute-account = { path = "./attribute/account", version = "0.1.0" }
+huione-anchor-attribute-constant = { path = "./attribute/constant", version = "0.1.0" }
+huione-anchor-attribute-error = { path = "./attribute/error", version = "0.1.0" }
+huione-anchor-attribute-program = { path = "./attribute/program", version = "0.1.0" }
+huione-anchor-attribute-state = { path = "./attribute/state", version = "0.1.0" }
+huione-anchor-attribute-interface = { path = "./attribute/interface", version = "0.1.0" }
+huione-anchor-attribute-event = { path = "./attribute/event", version = "0.1.0" }
+huione-anchor-derive-accounts = { path = "./derive/accounts", version = "0.1.0" }
+arrayref = "0.3.6"
+base64 = "0.13.0"
+borsh = "0.10.3"
+bytemuck = "1.4.0"
+huione-program = { path = "../../huione/sdk/program", version = "1.1.0" }
+thiserror = "1.0.20"
+bincode = "1.3.3"

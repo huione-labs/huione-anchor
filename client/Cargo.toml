@@ -1,0 +1,22 @@
+[package]
+name = "huione-anchor-client"
+version = "0.1.0"
+authors = ["HUIONE Foundation <foundation@huione.com>"]
+rust-version = "1.68.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Rust client for Anchor programs"
+
+[features]
+debug = []
+
+[dependencies]
+huione-anchor-lang = { path = "../lang", version = "0.1.0" }
+anyhow = "1.0.32"
+regex = "1.4.5"
+serde = { version = "1.0.122", features = ["derive"] }
+huione-client =  { path = "../../huione/client", version = "1.1.0" } 
+huione-sdk = { path = "../../huione/sdk", version = "1.1.0" }
+huione-account-decoder =  { path = "../../huione/account-decoder", version = "1.1.0" } 
+thiserror = "1.0.20"
+url = "2.2.2"

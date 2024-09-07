@@ -1,0 +1,24 @@
+[package]
+name = "huione-anchor-hpl"
+version = "0.1.0"
+authors = ["HUIONE Foundation <foundation@huione.com>"]
+rust-version = "1.68.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "CPI clients for SPL programs"
+
+[features]
+default = ["mint", "token", "associated_token"]
+mint = []
+token = ["hpl-token"]
+associated_token = ["hpl-associated-token-account"]
+governance = []
+shmem = []
+devnet = []
+# dex = ["serum_dex"]
+
+[dependencies]
+huione-anchor-lang = { path = "../lang", version = "0.1.0", features = ["derive"] }
+huione-program = { path = "../../huione/sdk/program", version = "1.1.0" }
+hpl-token = { path = "../../huione-program-library/token/program",version = "=1.0.0",features = ["no-entrypoint"], optional = true }
+hpl-associated-token-account = { path = "../../huione-program-library/associated-token-account/program",version = "=1.0.0", features = ["no-entrypoint"], optional = true }

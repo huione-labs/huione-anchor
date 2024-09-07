@@ -1,0 +1,16 @@
+[profile.release]
+lto = true
+
+[profile.release.package.huione-anchor-cli]
+codegen-units = 1
+
+[workspace]
+members = [
+    "cli",
+    "client",
+    "lang",
+    "lang/attribute/*",
+    "lang/derive/*",
+    "lang/syn",
+    "hpl",
+]
