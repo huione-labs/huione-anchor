@@ -1,4 +1,5 @@
 bin/
+!bin/*.rs
 node_modules/
 dist/
 .idea/
