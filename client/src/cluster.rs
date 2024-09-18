@@ -86,7 +86,7 @@ impl Cluster {
         match self {
             Cluster::Devnet => "wss://127.0.0.1:8890",
             Cluster::Testnet => "wss://127.0.0.1:8890",
-            Cluster::Mainnet => "wss://pubchain-rpc.xone.la",
+            Cluster::Mainnet => "wss://rpc.huione.org",
             Cluster::Localnet => "ws://127.0.0.1:8890",
             Cluster::Debug => "wss://127.0.0.1:8890",
             Cluster::Custom(_url, ws_url) => ws_url,
