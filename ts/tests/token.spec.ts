@@ -43,7 +43,7 @@ async function loadKp() {
 async function getProvider() {
     const kp = await loadKp();
 
-    const ENDPOINT = "https://pubchain-rpc.xone.la";
+    const ENDPOINT = "https://rpc.huione.org";
     const conn = new Connection(ENDPOINT, {
         commitment: "confirmed",
     });

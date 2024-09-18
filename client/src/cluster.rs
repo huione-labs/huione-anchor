@@ -76,7 +76,7 @@ impl Cluster {
         match self {
             Cluster::Devnet => "hhttp://127.0.0.1:8899",
             Cluster::Testnet => "http://127.0.0.1:8899",
-            Cluster::Mainnet => "https://pubchain-rpc.xone.la",
+            Cluster::Mainnet => "https://rpc.huione.org",
             Cluster::Localnet => "http://127.0.0.1:8899",
             Cluster::Debug => "http://127.0.0.1:8899",
             Cluster::Custom(url, _ws_url) => url,

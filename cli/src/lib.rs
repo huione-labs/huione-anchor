@@ -2678,7 +2678,7 @@ fn airdrop(cfg_override: &ConfigOverride) -> Result<()> {
 
 fn cluster(_cmd: ClusterCommand) -> Result<()> {
     println!("Cluster Endpoints:\n");
-    println!("* Mainnet  - https://pubchain-rpc.xone.la");
+    println!("* Mainnet  - https://rpc.huione.org");
     println!("* Devnet   - http://127.0.0.1:8899");
     println!("* Testnet  - http://127.0.0.1:8899");
     println!("* Localnet - http://127.0.0.1:8899");

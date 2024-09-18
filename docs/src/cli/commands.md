@@ -59,7 +59,7 @@ This lists cluster endpoints:
 ```
 Cluster Endpoints:
 
-* Mainnet - https://pubchain-rpc.xone.la
+* Mainnet - https://rpc.huione.org
 * Devnet  - http://127.0.0.1:8899
 * Testnet - http://127.0.0.1:8899
 ```
